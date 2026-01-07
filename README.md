@@ -29,10 +29,10 @@ Each record consists of:
 
 ## ▶️ Steps to Run the Project
 
-1. Navigate to the project root directory:  cd news_classification_project
-2. Install required dependencies:  pip install -r requirements.txt
-3. Run the complete machine learning pipeline:  python main.py
-4. View the evaluation results (accuracy & confusion matrices):  cat results/metrics.txt
+1. Navigate to the project root directory:
+   ```bash
+   cd news_classification_project
+
 
 This will execute:
 ✅Data preprocessing
