@@ -37,6 +37,14 @@ Each record consists of:
    ```bash
    pip install -r requirements.txt
 
+3. Run the complete machine learning pipeline:
+   ```bash
+   python main.py
+
+4. View the evaluation results (accuracy & confusion matrices):
+   ```bash
+   cat results/metrics.txt
+
 
 This will execute:
 ✅Data preprocessing
