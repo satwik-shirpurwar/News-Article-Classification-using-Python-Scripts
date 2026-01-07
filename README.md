@@ -44,11 +44,11 @@ This will execute:
 ## 🤖 Models Used
 The following machine learning models were implemented and compared:
 
-Logistic Regression
-Multinomial Naive Bayes
-Linear Support Vector Machine (Linear SVM)
+- Logistic Regression
+- Multinomial Naive Bayes
+- Linear Support Vector Machine (Linear SVM)
 
-All models were trained using TF-IDF feature representation.
+- All models were trained using TF-IDF feature representation.
 
 
 ## 📈 Final Result Summary
@@ -58,7 +58,7 @@ All models were trained using TF-IDF feature representation.
 
 ## 🏆 Conclusion
 
--Linear SVM achieved the highest balanced performance among all models.
--The project demonstrates a complete, modular, and industry-standard ML workflow.
--All evaluation metrics and confusion matrices are saved in results/metrics.txt.
--The classification results show strong performance across all four news categories.
+- Linear SVM achieved the highest balanced performance among all models.
+- The project demonstrates a complete, modular, and industry-standard ML workflow.
+- All evaluation metrics and confusion matrices are saved in results/metrics.txt.
+- The classification results show strong performance across all four news categories.
