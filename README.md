@@ -32,6 +32,10 @@ Each record consists of:
 1. Navigate to the project root directory:
    ```bash
    cd news_classification_project
+   
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
 
 
 This will execute:
