@@ -1,0 +1,24 @@
+
+Model: logistic_regression
+Accuracy: 90.92%
+Confusion Matrix:
+[[5401  190  243  166]
+ [  84 5840   40   36]
+ [ 200   45 5287  468]
+ [ 204   77  427 5292]]
+
+Model: naive_bayes
+Accuracy: 89.53%
+Confusion Matrix:
+[[5346  223  258  173]
+ [  98 5826   37   39]
+ [ 242   62 5128  568]
+ [ 256  112  444 5188]]
+
+Model: linear_svm
+Accuracy: 91.05%
+Confusion Matrix:
+[[5395  188  259  158]
+ [  65 5861   37   37]
+ [ 190   50 5287  473]
+ [ 200   77  413 5310]]
