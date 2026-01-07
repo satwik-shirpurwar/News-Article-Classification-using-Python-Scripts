@@ -1,129 +1,74 @@
+# 📰 News Article Classification using Machine Learning
 
-📰 News Article Classification using Machine Learning
+## 📌 Project Overview
+This project implements a complete end-to-end machine learning pipeline to classify news articles into predefined categories using Python scripts only. The pipeline includes data preprocessing, feature engineering, model training, and evaluation, and the project is fully runnable from the terminal without using Jupyter notebooks.
 
-📌 Project Overview
+---
 
-This project implements a complete machine learning pipeline to classify news articles into predefined categories using Python scripts only. It covers data preprocessing, feature engineering, model training, and evaluation, and is fully runnable from the terminal without using Jupyter notebooks.
-
-
-📊 Dataset Source
-
-AG News Classification Dataset (Public Dataset)
-Source: https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset/data
+## 📊 Dataset Source
+**AG News Classification Dataset (Public Dataset)**  
+Source: https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset  
 
 The dataset contains news articles categorized into four classes:
-
-- World
-- Sports
-- Business
-- Science/Technology
+- World  
+- Sports  
+- Business  
+- Science/Technology  
 
 Each record consists of:
+- Class Index  
+- Title  
+- Description  
 
-- Class Index
-- Title
-- Description
+---
 
+## 📁 Folder Structure Explanation
 
-📁 Folder Structure Explanation
-
-news_classification_project/
-│
-├── data/                              # Contains all dataset-related files
-│   ├── processed/                    # Preprocessed and feature-engineered data
-│   │   ├── tfidf.pkl                 # Saved TF-IDF vectorizer
-│   │   ├── X_test_tfidf.pkl          # TF-IDF features for test data
-│   │   ├── X_test.pkl                # Cleaned test text
-│   │   ├── X_train_tfidf.pkl         # TF-IDF features for training data
-│   │   ├── X_train.pkl               # Cleaned training text
-│   │   ├── y_test.pkl                # Test labels
-│   │   └── y_train.pkl               # Training labels
-│   │
-│   └── raw/                          # Original dataset (unchanged)
-│       ├── test.csv                  # Raw test dataset
-│       └── train.csv                 # Raw training dataset
-│
-├── models/                           # Trained machine learning models
-│   ├── linear_svm.pkl                # Linear Support Vector Machine model
-│   ├── logistic_regression.pkl       # Logistic Regression model
-│   └── naive_bayes.pkl               # Multinomial Naive Bayes model
-│
-├── results/                          # Evaluation outputs
-│   └── metrics.txt                   # Accuracy and confusion matrices
-│
-├── src/                              # Source code files│
-│   ├── config.py                     # Project paths and configuration settings
-│   ├── data_preprocessing.py         # Data loading, cleaning, preprocessing
-│   ├── evaluate.py                   # Model evaluation logic
-│   ├── feature_engineering.py        # TF-IDF feature extraction
-│   └── train.py                      # Model training scripts
-│
-├── main.py                           # Entry point to run full ML pipeline
-├── Readme.md                         # Project documentation
-└── requirements.txt                  # Required Python libraries
+<img width="843" height="820" alt="image" src="https://github.com/user-attachments/assets/e22c457f-c7d5-4a93-84b0-002131c80f10" />
 
 
+## ▶️ Steps to Run the Project
 
+1. Navigate to the project root directory:
+   ```bash
+   cd news_classification_project
+   
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
 
-▶️ Steps to Run the Project
+3. Run the complete machine learning pipeline:
+   ```bash
+   python main.py
 
-1. Navigate to the project root directory: cd news_classification_project
-2. Install required dependencies: pip install -r requirements.txt
-3. Run the complete machine learning pipeline: python main.py
+4. View the evaluation results (accuracy & confusion matrices):
+   ```bash
+   cat results/metrics.txt
+
 
 This will execute:
-
 ✅Data preprocessing
 ✅Feature engineering
 ✅Model training
 ✅Model evaluation
 
 
-
-🤖 Models Used
-
+## 🤖 Models Used
 The following machine learning models were implemented and compared:
 
 - Logistic Regression
 - Multinomial Naive Bayes
 - Linear Support Vector Machine (Linear SVM)
-- All models were trained using TF-IDF features.
+
+- All models were trained using TF-IDF feature representation.
 
 
-📈 Final Result Summary
+## 📈 Final Result Summary
 
-Model	             Accuracy
-Logistic Regression   90.92%
-Naive Bayes	          89.53%
-Linear SVM	          91.05%
+<img width="554" height="700" alt="image" src="https://github.com/user-attachments/assets/599a03f9-3786-4308-9843-0fdcb231a6da" />
 
 
-Model: logistic_regression
-Accuracy: 90.92%
-Confusion Matrix:
-[[5401  190  243  166]
- [  84 5840   40   36]
- [ 200   45 5287  468]
- [ 204   77  427 5292]]
-
-Model: naive_bayes
-Accuracy: 89.53%
-Confusion Matrix:
-[[5346  223  258  173]
- [  98 5826   37   39]
- [ 242   62 5128  568]
- [ 256  112  444 5188]]
-
-Model: linear_svm
-Accuracy: 91.05%
-Confusion Matrix:
-[[5395  188  259  158]
- [  65 5861   37   37]
- [ 190   50 5287  473]
- [ 200   77  413 5310]]
-
-
-🏆 Conclusion
+## 🏆 Conclusion
 
 - Linear SVM achieved the highest balanced performance among all models.
 - The project demonstrates a complete, modular, and industry-standard ML workflow.
